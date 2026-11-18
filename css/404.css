@@ -1,0 +1,26 @@
+/* 404 page */
+/* 404 */
+#nf{min-height:100vh;display:grid;place-items:center;padding:110px clamp(18px,5vw,80px) 70px}
+.nfw{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,90px);align-items:center;max-width:1200px;width:100%}
+.nfw .code{font-size:clamp(110px,16vw,240px);font-weight:600;letter-spacing:-.07em;line-height:.8;color:var(--ink)}
+.nfw .code span{color:var(--acc)}
+.nfw h1{font-size:clamp(28px,3vw,42px);letter-spacing:-.035em;font-weight:600;margin:26px 0 14px;line-height:1.05}
+.nfw p{font-size:17px;line-height:1.55;color:var(--mute);max-width:440px}
+.nfw .mono.path{display:inline-block;margin-top:16px;background:var(--paper);border:1px solid var(--line);padding:6px 10px;color:var(--navy)}
+.nfw .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.nfw .links{display:flex;gap:22px;flex-wrap:wrap;margin-top:34px;padding-top:22px;border-top:1px solid var(--line);font-size:15px}
+.nfw .links a{color:var(--mute)}.nfw .links a:hover{color:var(--acc-d)}
+.room{width:100%;max-width:520px;justify-self:center}
+.room .cone{transform-origin:260px 92px;animation:swing 3.4s ease-in-out infinite}
+@keyframes swing{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
+.room .chair{animation:roll 5s ease-in-out infinite}
+@keyframes roll{0%,100%{transform:translate(0,0)}50%{transform:translate(-22px,11px)}}
+.room .tape{stroke-dasharray:10 8;animation:march 1.2s linear infinite}
+@keyframes march{to{stroke-dashoffset:-18}}
+
+
+@media (max-width:860px){
+  .nfw{grid-template-columns:1fr}
+  .room{max-width:340px;order:-1}
+}
+@media (prefers-reduced-motion:reduce){.room *{animation:none!important}}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Page not found — Acme Interiors</title>
+<meta name="description" content="This page does not exist.">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/404.css">
+</head>
+<body data-page="404">
+
+<nav>
+  <a href="index.html" class="brandlogo" aria-label="Acme Interiors home"><img src="assets/logo.svg" alt="Acme Interiors"></a>
+  <div class="navlinks">
+    <a href="work.html" data-nav="work">Work</a><a href="index.html#services" data-nav="services">Services</a><a href="index.html#process" data-nav="process">Process</a><a href="index.html#sectors" data-nav="sectors">Sectors</a><a href="index.html#contact" data-nav="contact">Contact</a>
+  </div>
+  <a href="index.html#contact" class="btn acc">Start a project <span class="arr">→</span></a>
+</nav>
+
+<main id="nf">
+  <div class="nfw">
+    <div>
+      <div class="code">4<span>0</span>4</div>
+      <h1>This room hasn't been built yet.</h1>
+      <p>The page you're looking for doesn't exist, was moved, or is still on the drawing board.</p>
+      <span class="mono path" id="nfpath"></span>
+      <div class="ctas"><a href="index.html" class="btn acc">Back to home <span class="arr">→</span></a><a href="work.html" class="btn">See our work</a></div>
+      <div class="links"><a href="index.html#services">Services</a><a href="index.html#process">Process</a><a href="careers.html">Careers</a><a href="index.html#contact">Contact</a></div>
+    </div>
+    <svg class="room" viewBox="0 0 520 420" fill="none" stroke-linejoin="round">
+      <path d="M260 380L40 270 260 160 480 270z" fill="#fff" stroke="#13202A" stroke-width="1.4"/>
+      <path d="M40 270V110L260 0v160z" fill="#EEECE8" stroke="#13202A" stroke-width="1.4"/>
+      <path d="M260 160V0l220 110v160z" fill="#233D4D" stroke="#13202A" stroke-width="1.4"/>
+      <path d="M300 60l120 60v60l-120-60z" fill="#7FB3D5" opacity=".55"/>
+      <g opacity=".14" stroke="#13202A"><path d="M95 297.5L315 187.5M150 325L370 215M205 352.5L425 242.5M95 242.5L315 352.5M150 215L370 325M205 187.5L425 297.5"/></g>
+      <path class="tape" d="M120 300L260 230 400 300 260 370z" stroke="#FE7F2D" stroke-width="2.4"/>
+      <g class="cone"><path d="M260 92v40" stroke="#13202A"/><path d="M244 132h32l-16-14z" fill="#F6C453" stroke="#13202A"/><circle cx="260" cy="138" r="6" fill="#FFF1D6"/></g>
+      <g class="chair"><path d="M300 296l26 13 26-13-26-13z" fill="#FE7F2D" stroke="#13202A"/><path d="M326 309v-6M326 283v-30l26-13v30" fill="#FE7F2D" stroke="#13202A"/><path d="M326 309v18M312 334l14-7 14 7" stroke="#13202A" stroke-width="1.6"/></g>
+      <g><path d="M170 300l28 14 28-14-28-14z" fill="#F6C453" stroke="#13202A"/><path d="M170 300v22l28 14v-22zM226 300v22l-28 14" fill="#E3B23F" stroke="#13202A"/></g>
+      <g><path d="M140 260v-18l14-7 14 7v18l-14 7z" fill="#fff" stroke="#13202A"/><path d="M154 225l-12 6 12 6 12-6z" fill="#7DAE8A" stroke="#13202A"/><circle cx="154" cy="214" r="13" fill="#7DAE8A" stroke="#13202A"/></g>
+    </svg>
+  </div>
+</main>
+
+<footer>
+  <div class="top">
+    <div class="wm">acme<span>/</span>interiors</div>
+    <div class="cols">
+      <div><span class="mono">Studio</span><a href="work.html">Work</a><a href="index.html#services">Services</a><a href="index.html#process">Process</a><a href="index.html#sectors">Sectors</a></div>
+      <div><span class="mono">Company</span><a href="index.html#contact">Start a project</a><a href="careers.html">Careers</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></div>
+    </div>
+  </div>
+  <div class="bot mono"><span>© 2026 Acme Interiors</span><span class="flinks"><a href="terms.html">Terms &amp; conditions</a><a href="privacy.html">Privacy policy</a><a href="careers.html">Careers</a></span></div>
+</footer>
+
+<script src="js/config.js" defer></script>
+<script src="js/site.js" defer></script>
+<script>document.getElementById("nfpath").textContent = location.pathname.split("/").pop() + location.hash;</script>
+</body>
+</html>

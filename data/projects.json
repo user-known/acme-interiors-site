@@ -1,0 +1,217 @@
+{
+  "categories": [
+    {
+      "id": "tech",
+      "name": "Technology",
+      "color": "#FE7F2D"
+    },
+    {
+      "id": "finance",
+      "name": "Finance",
+      "color": "#233D4D"
+    },
+    {
+      "id": "cowork",
+      "name": "Co-working",
+      "color": "#7FB3D5"
+    },
+    {
+      "id": "corporate",
+      "name": "Corporate",
+      "color": "#F6C453"
+    },
+    {
+      "id": "health",
+      "name": "Healthcare",
+      "color": "#7DAE8A"
+    }
+  ],
+  "projects": [
+    {
+      "id": "tech-floor",
+      "title": "Open-plan tech floor",
+      "category": "tech",
+      "featured": true,
+      "area": "18,000",
+      "duration": "14",
+      "type": "Design & build",
+      "year": "2025",
+      "lead": "A full-floor workplace for a fast-growing product team, planned around neighbourhoods rather than rows.",
+      "body": "Each team gets its own cluster of workstations, a writable wall and a nearby huddle space. A central café spine connects them and doubles as the floor's town-hall space. Acoustic baffles, phone booths and a quiet library edge keep focus work possible in an open plan.",
+      "hero": "img/tech-floor-hero.jpg",
+      "images": [
+        {
+          "src": "img/tech-floor-1.jpg",
+          "caption": "Workstation neighbourhoods"
+        },
+        {
+          "src": "img/tech-floor-2.jpg",
+          "caption": "Café spine & town hall"
+        },
+        {
+          "src": "img/tech-floor-3.jpg",
+          "caption": "Phone booths"
+        },
+        {
+          "src": "img/tech-floor-4.jpg",
+          "caption": "Library edge"
+        }
+      ]
+    },
+    {
+      "id": "bank-boardroom",
+      "title": "Private bank boardroom",
+      "category": "finance",
+      "featured": false,
+      "area": "1,200",
+      "duration": "6",
+      "type": "Interior design",
+      "year": "2024",
+      "lead": "A boardroom suite for a private bank that needed to feel discreet, warm and technically flawless.",
+      "body": "We designed a bespoke oak table with integrated power and conferencing, fluted acoustic wall panels that hide the AV equipment, and layered lighting that adjusts from presentation mode to evening dinners.",
+      "hero": "img/bank-boardroom-hero.jpg",
+      "images": [
+        {
+          "src": "img/bank-boardroom-1.jpg",
+          "caption": "Bespoke oak table"
+        },
+        {
+          "src": "img/bank-boardroom-2.jpg",
+          "caption": "Fluted acoustic panels"
+        },
+        {
+          "src": "img/bank-boardroom-3.jpg",
+          "caption": "Concealed AV"
+        },
+        {
+          "src": "img/bank-boardroom-4.jpg",
+          "caption": "Pre-function lounge"
+        }
+      ]
+    },
+    {
+      "id": "cowork-cafe",
+      "title": "Co-working café",
+      "category": "cowork",
+      "featured": false,
+      "area": "3,500",
+      "duration": "8",
+      "type": "Design & build",
+      "year": "2025",
+      "lead": "A members' café that works as a coffee bar by day, hot-desking by afternoon and an event space after hours.",
+      "body": "Mobile furniture, a long communal bar and banquette seating let the operator reset the room in minutes. A bold colour palette and pendant lighting give the space a hospitality feel that sets it apart from the rest of the building.",
+      "hero": "img/cowork-cafe-hero.jpg",
+      "images": [
+        {
+          "src": "img/cowork-cafe-1.jpg",
+          "caption": "Coffee bar"
+        },
+        {
+          "src": "img/cowork-cafe-2.jpg",
+          "caption": "Communal tables"
+        },
+        {
+          "src": "img/cowork-cafe-3.jpg",
+          "caption": "Banquette seating"
+        },
+        {
+          "src": "img/cowork-cafe-4.jpg",
+          "caption": "Event mode"
+        }
+      ]
+    },
+    {
+      "id": "hq-reception",
+      "title": "Corporate HQ reception",
+      "category": "corporate",
+      "featured": true,
+      "area": "2,400",
+      "duration": "9",
+      "type": "Turnkey fit-out",
+      "year": "2024",
+      "lead": "An arrival experience for a corporate headquarters, built around a sculpted reception desk and a backlit brand wall.",
+      "body": "We reworked the ground-floor lobby to separate visitor arrival, security and a hospitality lounge without losing the double-height openness. Stone, timber and warm lighting carry the brand from the entrance to the lifts.",
+      "hero": "img/hq-reception-hero.jpg",
+      "images": [
+        {
+          "src": "img/hq-reception-1.jpg",
+          "caption": "Sculpted reception desk"
+        },
+        {
+          "src": "img/hq-reception-2.jpg",
+          "caption": "Backlit brand wall"
+        },
+        {
+          "src": "img/hq-reception-3.jpg",
+          "caption": "Visitor lounge"
+        },
+        {
+          "src": "img/hq-reception-4.jpg",
+          "caption": "Lift lobby"
+        }
+      ]
+    },
+    {
+      "id": "breakout-lounge",
+      "title": "Startup breakout lounge",
+      "category": "tech",
+      "featured": false,
+      "area": "2,000",
+      "duration": "5",
+      "type": "Furniture & FF&E",
+      "year": "2025",
+      "lead": "Soft seating, a library wall and planted corners that give a busy startup somewhere to slow down.",
+      "body": "The brief was a space people choose over their desks. Zoned rugs, mixed seating heights and a bookshelf partition create small settings inside one room, from a quick stand-up to an afternoon of reading.",
+      "hero": "img/breakout-lounge-hero.jpg",
+      "images": [
+        {
+          "src": "img/breakout-lounge-1.jpg",
+          "caption": "Lounge seating"
+        },
+        {
+          "src": "img/breakout-lounge-2.jpg",
+          "caption": "Library wall"
+        },
+        {
+          "src": "img/breakout-lounge-3.jpg",
+          "caption": "Planted corner"
+        },
+        {
+          "src": "img/breakout-lounge-4.jpg",
+          "caption": "Stand-up bar"
+        }
+      ]
+    },
+    {
+      "id": "clinic",
+      "title": "Specialist clinic",
+      "category": "health",
+      "featured": false,
+      "area": "5,800",
+      "duration": "16",
+      "type": "Turnkey fit-out",
+      "year": "2024",
+      "lead": "A calm, daylight-led clinic designed around patient flow, privacy and easy-clean finishes.",
+      "body": "Clear sightlines from the front desk, separate in and out routes and a palette of soft greens and timber reduce anxiety for patients. Every finish was specified for durability and infection control without looking clinical.",
+      "hero": "img/clinic-hero.jpg",
+      "images": [
+        {
+          "src": "img/clinic-1.jpg",
+          "caption": "Waiting lounge"
+        },
+        {
+          "src": "img/clinic-2.jpg",
+          "caption": "Front desk"
+        },
+        {
+          "src": "img/clinic-3.jpg",
+          "caption": "Consult corridor"
+        },
+        {
+          "src": "img/clinic-4.jpg",
+          "caption": "Treatment room"
+        }
+      ]
+    }
+  ]
+}

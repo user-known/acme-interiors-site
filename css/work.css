@@ -1,0 +1,79 @@
+/* Work: gallery grid and project detail pages */
+/* GALLERY */
+#gallery{padding:120px clamp(18px,5vw,80px) 100px;min-height:100vh}
+.ghead{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:end;margin-bottom:40px}
+.ghead .mono{color:var(--acc-d);display:block;margin-bottom:18px}
+.ghead h1{font-size:clamp(48px,7vw,112px);line-height:.92;letter-spacing:-.055em;font-weight:600}
+.ghead h1 em{font-style:normal;color:var(--acc)}
+.ghead p{font-size:18px;line-height:1.55;color:var(--mute);justify-self:end;max-width:440px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:34px;padding-bottom:24px;border-bottom:1px solid var(--line)}
+.filters button{font:500 14px var(--sans);padding:10px 18px;border:1px solid var(--line);background:var(--paper);cursor:pointer;color:var(--ink);border-radius:999px;transition:all .2s;display:inline-flex;align-items:center;gap:8px}
+.filters button i{width:8px;height:8px;border-radius:50%;background:var(--c,var(--ink))}
+.filters button.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.ggrid{display:grid;grid-template-columns:repeat(12,1fr);gap:20px;grid-auto-flow:dense}
+.proj{grid-column:span 4;cursor:pointer;background:var(--paper);border:1px solid var(--line);transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s,opacity .4s;position:relative;opacity:0;transform:translateY(20px)}
+.proj.in{opacity:1;transform:none}
+.proj{display:flex;flex-direction:column}
+.proj.wide{grid-column:span 8;grid-row:span 2}
+.proj:hover{transform:translateY(-6px);box-shadow:0 24px 50px -24px rgba(35,61,77,.35)}
+.proj .img{aspect-ratio:4/3;background:var(--t);position:relative;overflow:hidden}
+.proj.wide .img{aspect-ratio:auto;flex:1;min-height:300px}
+.proj .img img{position:absolute;inset:0}
+.proj .img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.proj:hover .img img{transform:scale(1.05)}
+.proj .img .ph{position:absolute;inset:0;display:grid;place-items:center;color:var(--mute)}
+.proj .tagc{position:absolute;left:14px;top:14px;background:var(--paper);padding:6px 10px;display:flex;align-items:center;gap:7px}
+.proj .tagc i{width:7px;height:7px;border-radius:50%;background:var(--c)}
+.proj .meta{padding:18px 20px 20px;display:flex;justify-content:space-between;gap:16px;align-items:flex-end}
+.proj h3{font-size:20px;letter-spacing:-.02em;font-weight:600;margin-bottom:6px}
+.proj .meta span{color:var(--mute)}
+.proj .go{width:40px;height:40px;flex:none;border:1px solid var(--line);display:grid;place-items:center;transition:all .25s}
+.proj:hover .go{background:var(--acc);border-color:var(--acc)}
+
+/* PROJECT PAGE */
+#pview{padding:104px clamp(18px,5vw,80px) 90px;min-height:100vh}
+.pv-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:34px}
+.back{display:inline-flex;align-items:center;gap:10px;color:var(--ink);padding:10px 0}
+.back:hover{color:var(--acc-d)}
+.pv-cat{display:inline-flex;align-items:center;gap:8px;color:var(--mute)}
+.pv-cat i{width:8px;height:8px;border-radius:50%;background:var(--c)}
+.pv-title{font-size:clamp(48px,7.4vw,124px);line-height:.92;letter-spacing:-.055em;font-weight:600;max-width:1100px;margin-bottom:40px}
+.pv-hero{margin:0 calc(-1*clamp(18px,5vw,80px));height:min(78vh,820px);overflow:hidden;position:relative;background:var(--sand)}
+.pv-hero img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.08);transition:transform 1.6s cubic-bezier(.2,.7,.2,1)}
+.pv-hero.in img{transform:none}
+.pv-body{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,100px);padding:80px 0 70px;border-bottom:1px solid var(--line)}
+.pv-desc .mono{color:var(--acc-d);display:block;margin-bottom:20px}
+.pv-desc p{font-size:clamp(18px,1.5vw,22px);line-height:1.5;letter-spacing:-.01em;margin-bottom:18px}
+.pv-desc p+p{font-size:17px;color:var(--mute);letter-spacing:0}
+.pv-stats{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-content:start}
+.pv-stat{background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--c);padding:22px 22px 24px}
+.pv-stat dt{font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--mute);margin-bottom:14px}
+.pv-stat dd{font-size:clamp(28px,2.6vw,40px);font-weight:600;letter-spacing:-.04em;line-height:1}
+.pv-stat dd small{font-size:.45em;color:var(--mute);letter-spacing:-.01em;margin-left:4px}
+.pv-stat.wide{grid-column:1/-1}
+.pv-stat.wide dd{font-size:clamp(22px,2vw,28px)}
+.pv-imgs{display:grid;grid-template-columns:repeat(12,1fr);gap:20px;padding-top:70px}
+.pv-imgs figure{margin:0;position:relative}
+.pv-imgs figure.f12{grid-column:span 12}.pv-imgs figure.f7{grid-column:span 7}.pv-imgs figure.f5{grid-column:span 5}
+.pv-imgs .frame{overflow:hidden;background:var(--sand);aspect-ratio:16/10}
+.pv-imgs figure.f12 .frame{aspect-ratio:21/9}
+.pv-imgs figure.f5 .frame{aspect-ratio:auto;height:calc(100% - 34px)}
+.pv-imgs img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.pv-imgs figure:hover img{transform:scale(1.03)}
+.pv-imgs figcaption{font:400 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--mute);padding-top:12px;display:flex;gap:10px}
+.pv-imgs figcaption b{color:var(--acc-d);font-weight:500}
+.pv-next{margin-top:90px;padding-top:34px;border-top:1px solid var(--ink);display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+.pv-next a.nx{display:block}
+.pv-next .mono{color:var(--mute);display:block;margin-bottom:14px}
+.pv-next .nt{font-size:clamp(34px,4.6vw,68px);font-weight:600;letter-spacing:-.045em;line-height:1;transition:color .25s}
+.pv-next a.nx:hover .nt{color:var(--acc)}
+.pv-next .nt span{display:inline-block;transition:transform .3s}
+.pv-next a.nx:hover .nt span{transform:translateX(10px)}
+
+
+@media (max-width:860px){
+  .ghead,.pv-body{grid-template-columns:1fr}.ghead p{justify-self:start}
+  .pv-body{padding:50px 0 44px}.pv-hero{height:56vh}
+  .pv-imgs figure.f7,.pv-imgs figure.f5{grid-column:span 12}.pv-imgs figure.f5 .frame{height:auto;aspect-ratio:16/10}.pv-imgs figure.f12 .frame{aspect-ratio:16/10}
+  .proj,.proj.wide{grid-column:span 12;grid-row:auto}.proj.wide .img{flex:none;aspect-ratio:4/3;min-height:0}
+}

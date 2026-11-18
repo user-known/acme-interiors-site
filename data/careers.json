@@ -1,0 +1,142 @@
+{
+  "departments": [
+    {
+      "id": "design",
+      "name": "Design",
+      "color": "#FE7F2D"
+    },
+    {
+      "id": "delivery",
+      "name": "Delivery",
+      "color": "#233D4D"
+    },
+    {
+      "id": "viz",
+      "name": "Visualisation",
+      "color": "#7FB3D5"
+    },
+    {
+      "id": "growth",
+      "name": "Growth",
+      "color": "#7DAE8A"
+    }
+  ],
+  "roles": [
+    {
+      "id": "senior-interior-designer",
+      "title": "Senior Interior Designer",
+      "department": "design",
+      "type": "Full-time",
+      "experience": "6+ years",
+      "open": true,
+      "summary": "Lead corporate workplace projects from brief to handover, owning the design intent and the client relationship.",
+      "responsibilities": [
+        "Run client workshops and turn briefs into space plans and concepts",
+        "Develop material palettes, joinery details and FF&E schedules",
+        "Guide junior designers and review drawings before issue",
+        "Visit site to resolve design queries during the build"
+      ],
+      "requirements": [
+        "Portfolio of delivered commercial or workplace interiors",
+        "Strong AutoCAD and SketchUp; Revit is a plus",
+        "Confident presenting to senior client stakeholders"
+      ]
+    },
+    {
+      "id": "junior-interior-designer",
+      "title": "Junior Interior Designer",
+      "department": "design",
+      "type": "Full-time",
+      "experience": "0–2 years",
+      "open": true,
+      "summary": "Support project teams on layouts, drawings and material selections while learning how great offices get built.",
+      "responsibilities": [
+        "Prepare layouts, elevations and working drawings",
+        "Build mood boards and source samples",
+        "Update drawings from client and site feedback"
+      ],
+      "requirements": [
+        "Degree or diploma in interior design or architecture",
+        "Working knowledge of AutoCAD and SketchUp",
+        "A sharp eye for detail and a willingness to learn on site"
+      ]
+    },
+    {
+      "id": "3d-visualiser",
+      "title": "3D Visualiser",
+      "department": "viz",
+      "type": "Full-time",
+      "experience": "2+ years",
+      "open": true,
+      "summary": "Turn design concepts into photoreal stills and walkthroughs that help clients say yes.",
+      "responsibilities": [
+        "Produce renders and animated walkthroughs for pitches and approvals",
+        "Build and maintain our material and furniture library",
+        "Work with designers to iterate quickly on lighting and finishes"
+      ],
+      "requirements": [
+        "Strong 3ds Max + Corona/V-Ray, or Enscape/Twinmotion",
+        "A portfolio of interior renders with convincing lighting",
+        "Basic post-production in Photoshop"
+      ]
+    },
+    {
+      "id": "project-manager-fit-out",
+      "title": "Project Manager — Fit-out",
+      "department": "delivery",
+      "type": "Full-time",
+      "experience": "5+ years",
+      "open": true,
+      "summary": "Own programme, budget and quality on our turnkey projects, and be the client's single point of contact.",
+      "responsibilities": [
+        "Plan and track programmes, budgets and procurement",
+        "Coordinate contractors, MEP consultants and vendors",
+        "Run weekly client and site progress meetings",
+        "Lead snagging and handover documentation"
+      ],
+      "requirements": [
+        "Track record delivering commercial interior fit-outs",
+        "Solid grasp of civil, MEP and joinery sequencing",
+        "Calm, clear communicator under pressure"
+      ]
+    },
+    {
+      "id": "site-engineer",
+      "title": "Site Engineer",
+      "department": "delivery",
+      "type": "Full-time",
+      "experience": "2+ years",
+      "open": true,
+      "summary": "Keep our sites running safely and to drawing, every day.",
+      "responsibilities": [
+        "Supervise daily site work and workforce",
+        "Check work against drawings and quality standards",
+        "Maintain site records, measurements and safety checks"
+      ],
+      "requirements": [
+        "Diploma or degree in civil engineering",
+        "Experience on interior fit-out sites",
+        "Comfortable reading architectural and MEP drawings"
+      ]
+    },
+    {
+      "id": "business-development-executive",
+      "title": "Business Development Executive",
+      "department": "growth",
+      "type": "Full-time",
+      "experience": "2+ years",
+      "open": true,
+      "summary": "Find and win new corporate workplace projects and nurture long-term client relationships.",
+      "responsibilities": [
+        "Identify and qualify leads across target sectors",
+        "Coordinate proposals and pitch presentations with the design team",
+        "Maintain the CRM and report on the pipeline"
+      ],
+      "requirements": [
+        "Experience selling to corporate or real-estate clients",
+        "Excellent written and spoken English",
+        "Interest in design and the built environment"
+      ]
+    }
+  ]
+}

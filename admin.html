@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Admin — Acme Interiors</title>
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin">
+
+<aside class="side">
+  <a href="index.html" class="brandlogo" target="_blank" rel="noopener" title="Open the website"><img src="assets/logo.svg" alt="Acme Interiors"></a>
+  <span class="mono sidelabel">Content</span>
+  <a href="#projects" data-view="projects"><svg viewBox="0 0 20 20"><rect x="2" y="2" width="7" height="7"/><rect x="11" y="2" width="7" height="7"/><rect x="2" y="11" width="7" height="7"/><rect x="11" y="11" width="7" height="7"/></svg>Projects<b id="cnt-projects"></b></a>
+  <a href="#careers" data-view="careers"><svg viewBox="0 0 20 20"><rect x="2" y="6" width="16" height="11"/><path d="M7 6V3h6v3"/></svg>Careers<b id="cnt-careers"></b></a>
+  <span class="mono sidelabel">Form submissions</span>
+  <a href="#enquiries" data-view="enquiries"><svg viewBox="0 0 20 20"><rect x="2" y="4" width="16" height="12"/><path d="M2 5l8 6 8-6"/></svg>Enquiries<b id="cnt-enquiries"></b></a>
+  <a href="#applications" data-view="applications"><svg viewBox="0 0 20 20"><path d="M5 2h7l4 4v12H5z"/><path d="M12 2v4h4M8 11h5M8 14h5"/></svg>Applications<b id="cnt-applications"></b></a>
+  <span class="mono sidelabel">Setup</span>
+  <a href="#settings" data-view="settings"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/><path d="M10 1v3M10 16v3M1 10h3M16 10h3M3.6 3.6l2.1 2.1M14.3 14.3l2.1 2.1M3.6 16.4l2.1-2.1M14.3 5.7l2.1-2.1"/></svg>Settings</a>
+  <div class="sidefoot">
+    <div class="conn" id="conn"><i></i><span>Not connected</span></div>
+    <a href="index.html" target="_blank" rel="noopener" class="mono">View website ↗</a>
+  </div>
+</aside>
+
+<main class="main">
+  <header class="top">
+    <div><span class="mono crumb" id="crumb"></span><h1 id="vtitle">Loading…</h1></div>
+    <div class="actions" id="vactions"></div>
+  </header>
+  <div id="banner"></div>
+  <div id="view"></div>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="modal" id="modal" aria-hidden="true"><div class="mbox" role="dialog" aria-modal="true"><div id="mbody"></div></div></div>
+<div class="busy" id="busy"><div><i></i><span id="busytext">Publishing…</span></div></div>
+
+<script src="js/config.js"></script>
+<script src="js/github.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

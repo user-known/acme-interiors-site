@@ -1,0 +1,51 @@
+/* Careers page */
+/* CAREERS */
+.perks{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.perk{background:var(--t);padding:26px 24px 28px;min-height:220px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.perk:hover{transform:translateY(-6px)}
+.perk svg{width:40px;height:40px}
+.perk h3{font-size:21px;letter-spacing:-.02em;font-weight:600;margin:28px 0 8px}
+.perk p{font-size:15px;line-height:1.5;color:var(--mute)}
+.rolebar{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:24px}
+.rolebar .ptitle{margin:0}
+.rfil{display:flex;gap:8px;flex-wrap:wrap}
+.rfil button{font:500 14px var(--sans);padding:9px 16px;border:1px solid var(--line);background:var(--paper);cursor:pointer;color:var(--ink);border-radius:999px;transition:all .2s}
+.rfil button.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.roles{border-top:1px solid var(--ink)}
+.role{border-bottom:1px solid var(--line)}
+.role summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:1.6fr 1fr 1fr 44px;gap:20px;align-items:center;padding:26px 0;transition:padding .3s}
+.role summary::-webkit-details-marker{display:none}
+.role summary:hover{padding-left:12px}
+.role summary h3{font-size:clamp(20px,2vw,26px);font-weight:600;letter-spacing:-.025em}
+.role summary .mono{color:var(--mute)}
+.role summary .dep{display:inline-flex;align-items:center;gap:8px;color:var(--ink)}
+.role summary .dep i{width:8px;height:8px;border-radius:50%;background:var(--c)}
+.role .pm{width:44px;height:44px;border:1px solid var(--line);display:grid;place-items:center;font-size:20px;transition:all .3s}
+.role[open] .pm{background:var(--acc);border-color:var(--acc);transform:rotate(45deg)}
+.role .rb{display:grid;grid-template-columns:1.6fr 2fr;gap:40px;padding:0 0 36px}
+.role .rb>p{font-size:17px;line-height:1.55;color:var(--mute)}
+.role .rb h4{font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--acc-d);margin-bottom:12px}
+.role .rb ul{list-style:none;margin-bottom:22px}
+.role .rb li{font-size:15px;line-height:1.5;padding:7px 0 7px 22px;position:relative;border-bottom:1px solid var(--line)}
+.role .rb li::before{content:"";position:absolute;left:0;top:15px;width:8px;height:2px;background:var(--acc)}
+.hsteps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:h}
+.hsteps div{background:var(--paper);border:1px solid var(--line);padding:24px;position:relative}
+.hsteps div::before{counter-increment:h;content:"0" counter(h);font:600 44px var(--sans);letter-spacing:-.05em;color:var(--acc);display:block;margin-bottom:18px}
+.hsteps h4{font-size:19px;font-weight:600;letter-spacing:-.02em;margin-bottom:8px}
+.hsteps p{font-size:14px;line-height:1.5;color:var(--mute)}
+.apply{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(30px,6vw,100px);align-items:start}
+.apply h2{font-size:clamp(40px,5vw,76px);line-height:.94;letter-spacing:-.05em;font-weight:600}
+.apply h2 em{font-style:normal;color:var(--acc)}
+.apply>div>p{font-size:17px;line-height:1.55;color:var(--mute);margin-top:20px;max-width:400px}
+.file{border:1px dashed var(--ink);padding:16px;display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;font:400 15px var(--sans);color:var(--ink);text-transform:none;letter-spacing:0}
+.file:hover{border-color:var(--acc)}
+.file input{display:none}
+.file b{font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--acc-d)}
+
+
+@media (max-width:860px){
+  .apply{grid-template-columns:1fr}
+  .perks,.hsteps{grid-template-columns:1fr 1fr}.perk{min-height:0}
+  .role summary{grid-template-columns:1fr 44px;gap:8px 12px}.role summary .mono{grid-column:1}.role summary .pm{grid-row:1/4;grid-column:2}
+  .role .rb{grid-template-columns:1fr;gap:16px}
+}
